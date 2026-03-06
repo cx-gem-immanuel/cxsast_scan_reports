@@ -1,22 +1,3 @@
-# def _get_rest_token(server, username, password):
-#     """Get Bearer token for API requests."""
-#     rest_endpoint = urljoin(server, '/cxrestapi/auth/identity/connect/token')
-    
-#     data = {
-#         'username': username,
-#         'password': password,
-#         'grant_type': 'password',
-#         'scope': 'sast_rest_api',
-#         'client_id': 'resource_owner_client',
-#         'client_secret': '014DF517-39D1-4453-B7B3-9930C563627C'
-#     }
-    
-#     response = requests.post(rest_endpoint, data=data)
-#     response.raise_for_status()
-    
-#     token_data = response.json()
-#     return f"Bearer {token_data['access_token']}"
-
 import time
 from urllib.parse import urljoin
 
