@@ -103,8 +103,7 @@ class CxSASTClient:
     # curl --request GET \
     #   --url http://localhost/cxrestapi/reports/sastScan/{id} \
     #   --header 'Accept: application/json;v=1.0' \
-    #   --header 'Authorization: Bearer 123'
-    # $response = Invoke-WebRequest -uri "${fullReportURI}" -method get -contenttype 'application/x-www-form-urlencoded' -header $header -OutFile $fileName
+    #   --header 'Authorization: Bearer 123'    
     def download_report(self, project_id, project_name, report_id, file_name, combine_reports=False):
         download_endpoint = urljoin(self.server, f'/cxrestapi/reports/sastScan/{report_id}')
         headers = {
