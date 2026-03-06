@@ -1,0 +1,28 @@
+
+
+To Generate individual CSV reports for ALL project, use the following command
+-------------------------------------------------------------------------------
+py main.py -s "https://YOUR_SERVER_URL" -u "YOUR_USERNAME" -p "YOUR_PASSWORD" 
+
+
+
+
+
+
+To Generate individual CSV reports for a set of projects from 
+a list of project IDs in a file, use the following command:
+Note: The MY_PROJECT_LIST.txt file should contain one project ID per line.
+-------------------------------------------------------------------------------
+py main.py -s "https://YOUR_SERVER_URL" -u "YOUR_USERNAME" -p "YOUR_PASSWORD" --projects MY_PROJECT_LIST.txt
+
+
+
+
+
+
+To Generate a single COMBINED CSV report (either all or a subset from 
+a list of project IDs in a file) use the following command:
+Note: The MY_PROJECT_LIST.txt file should contain one project ID per line.
+-------------------------------------------------------------------------------
+py main.py -s "https://YOUR_SERVER_URL" -u "YOUR_USERNAME" -p "YOUR_PASSWORD" --combined 
+py main.py -s "https://YOUR_SERVER_URL" -u "YOUR_USERNAME" -p "YOUR_PASSWORD" --combined --projects MY_PROJECT_LIST.txt
