@@ -1,6 +1,6 @@
 
 
-To Generate individual CSV reports for ALL project, use the following command
+To Generate individual CSV reports for ALL projects, use the following command
 -------------------------------------------------------------------------------
 py main.py -s "https://YOUR_SERVER_URL" -u "YOUR_USERNAME" -p "YOUR_PASSWORD" 
 
